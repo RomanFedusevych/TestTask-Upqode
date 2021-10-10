@@ -1,0 +1,64 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+  background: #222;
+  height: 200px;
+
+  @include onDesctop {
+    gap: 40px;
+    height: 344px;
+  }
+
+  &__list {
+    display: flex;
+    gap: 30px;
+
+    padding: 0;
+
+    list-style: none;
+
+    @include onDesctop {
+      gap: 50px
+    }
+  }
+
+  &__link {
+    @include gilroyFont;
+    font-size: 10px;
+    text-decoration: none;
+    transition: 0.3s;
+
+    @include onDesctop {
+      font-size: 16px;
+    }
+
+    &:hover {
+      color: #0a0a0a;;
+    }
+  }
+
+  &__logo {
+    width: 197px;
+    height: 32px;
+  }
+
+  &__text {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 6px;
+    line-height: 24px;
+    /* identical to box height, or 171% */
+    text-align: center;
+    letter-spacing: 0.2px;
+
+    color: #777777;
+
+    @include onDesctop {
+      font-size: 14px;
+    }
+  }
+}

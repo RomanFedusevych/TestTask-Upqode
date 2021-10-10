@@ -1,0 +1,114 @@
+.services {
+  position: relative;
+  &__block {
+    display: grid;
+    justify-content: center;
+
+    @include onDesctop {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      margin-bottom: 200px;
+    }
+
+    &--reverse {
+      flex-direction: row-reverse;
+    }
+  }
+
+  &__imgCircle {
+    display: none;
+    width: 322px;
+    height: 322px;
+
+    @include onDesctop {
+      display: block;
+      width: 522px;
+      height: 522px;
+    }
+  }
+
+  &__imgPhone {
+    margin: 0 auto;
+
+    height: 300px;
+
+    background: url(../images/serviceMobile/circle.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+
+    @include onDesctop {
+      display: block;
+      padding-left: 60px;
+      padding-top: 90px;
+    
+      position: absolute;
+      background: none;
+      height: auto;
+    }
+
+    &--right {   
+      @include onDesctop {
+        transform: translate(3%);
+      }
+    }
+  }
+
+  &__info {
+    display: grid;
+    gap: 20px;
+    margin-top: 20px;
+    margin-bottom: 60px;
+  }
+
+  &__title {
+    margin-bottom: 10px;
+    text-align: center;
+    @include titleText;
+    @include onDesctop {
+      text-align: start
+    }
+  }
+
+  &__miniTitle {
+    @include text;
+  }
+
+  &__checkText {
+    margin-bottom: 32px;
+  }
+
+  &__checkBlock {
+    display: flex;
+    gap: 14px;
+  }
+
+  &__checkImg {
+    position: relative;
+    top: 4px;
+    width: 16px;
+    height: 13px;
+  }
+
+  &__text {
+    @include text;
+  }
+
+  &__button {
+    @include button;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    width: 208px;
+    height: 54px;
+    margin: 0 auto;
+
+    @include onDesctop {
+      margin: 0;
+    }
+  }
+}

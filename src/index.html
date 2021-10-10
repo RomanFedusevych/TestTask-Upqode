@@ -1,13 +1,449 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="page">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Title</title>
     <link rel="stylesheet" href="./styles/main.scss">
   </head>
-  <body>
-    <h1>Hello Mate Academy</h1>
-    <script type="text/javascript" src="scripts/main.js"></script>
+  <body class="page__body">
+    <header class="page__header header picture-1">
+      <div class="container">
+        <div class="header__container">
+          <a href="#" class="header__logo">
+            <img
+              class="header__img"
+              src="./images/logo/Logo.svg"
+              alt="logo"
+            >
+          </a>
+
+          <a href="#menu" class="header__menu"></a>
+
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="#Home" class="nav__link">
+                  Home
+                </a>
+              </li>
+              <li class="nav__item">
+                <a href="#Services" class="nav__link">
+                  Services
+                </a>
+              </li>
+              <li class="nav__item">
+                <a href="#Team" class="nav__link">
+                  Team
+                </a>
+              </li>
+              <li class="nav__item">
+                <a href="#Contact" class="nav__link">
+                  Contact Us
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        
+      </div>
+
+      <nav class=" page__menu menu" id="menu">
+        <div class="container">
+          <div class="menu__container">
+            <a href="#" class="menu__logo">
+              <img
+                class="header__img"
+                src="./images/logo/Logo.svg"
+                alt="logo">
+            </a>
+
+            <a href="#" class="menu__content">
+              <img src="./images/menu/cross.svg" alt="menu">
+            </a>
+          </div>
+        </div>
+
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a href="#" class="menu__link">
+              Home
+            </a>
+          </li>
+          <li class="menu__item">
+            <a href="#Services" class="menu__link">
+              Services
+            </a>
+          </li>
+          <li class="menu__item">
+            <a href="#Team" class="menu__link">
+              Team
+            </a>
+          </li>
+          <li class="menu__item">
+            <a href="#Contact" class="menu__link">
+              Contact Us
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <section class="header__section slider">
+        <div class="container">
+          <div class="slider__container">
+            <button class="slider__arrow slider__arrow--reverse arrow--left"></button>
+            <div class="slider__info">
+              <div class="slider__title">Mileage Made Simple</div>
+              <div class="slider__miniTitle">Motivation And Your Personal Vision An Unbeatable Force</div>
+              <button class="slider__button">Start Free Trial</button>
+            </div>
+            <button class="slider__arrow arrow--right"></button>
+          </div>
+          <div class="slider__dots">
+            <img class="slider__dots" src="./images/dots/dots.png" alt="">
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main class="page__main">
+      <section class="page__services services" id="Services">
+        <div class="container">
+          <div class="anim">
+            <svg id="svg" class="anim__svg" width="664" height="1216" viewBox="0 0 664 1216" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path class="anim__line" 
+                d="M22.9998 1C22.9998 1 649.558 119 663 589.542C655.833 1135 1 1215 1 1215" stroke="#29A0EC" stroke="red" stroke-width="1px" />
+              <circle class="anim__ball" r="10" cx="50" cy="100"></circle>
+            </svg>
+          </div>
+          <div class="services__container">
+            <div class="services__block">
+              <img src="./images/serviceMobile/circle.png" class="services__imgCircle" alt="">
+              <img src="./images/serviceMobile/mobile.png" class="services__imgPhone" alt="">
+              <div class="services__info">
+                <div class="services__title">Track every trip you make </div>
+                <div class="services__miniTitle">Every one of your trips is captured immediately and is never forgotten.
+                </div>
+                <div class="services__checkText">
+                  <div class="services__checkBlock">
+                    <img src="./images/check/check.png" class="services__checkImg" alt="">
+                    <div class="services__text">No signal dropout</div>
+                  </div>
+                  <div class="services__checkBlock">
+                    <img src="./images/check/check.png" class="services__checkImg" alt="">
+                    <div class="services__text">No missed trips</div>
+                  </div>
+                </div>
+                <button class="services__button">
+                  <span>lean more</span>
+                  <img src="./images/arrows/buttonArrow.png" alt="">
+                </button>
+              </div>
+            </div>
+            <div class="services__block services__block--reverse">
+                <img src="./images/serviceMobile/circle.png" class="services__imgCircle" alt="">
+                <img src="./images/serviceMobile/mobileRight.png" class="services__imgPhone services__imgPhone--right" alt="">
+              <div class="services__info">
+                <div class="services__title">Classify with a single swipe </div>
+                <div class="services__miniTitle">Swipe right for business. Swipe left for personal. It’s as easy as that.</div>
+                <div class="services__checkText">
+                  <div class="services__checkBlock">
+                    <img src="./images/check/check.png" class="services__checkImg" alt="">
+                    <div class="services__text">Review trips on the go</div>
+                  </div>
+                  <div class="services__checkBlock">
+                    <img src="./images/check/check.png" class="services__checkImg" alt="">
+                    <div class="services__text">Classify journeys in seconds</div>
+                  </div>
+                </div>
+                <button class="services__button">
+                  <span>lean more</span>
+                  <img src="./images/arrows/buttonArrow.png" alt="">
+                </button>
+              </div>
+            </div>
+            <div class="services__block">
+                <img src="./images/serviceMobile/circle.png" class="services__imgCircle" alt="">
+                <img src="./images/serviceMobile/mobile.png" class="services__imgPhone" alt="">
+              <div class="services__info">
+                <div class="services__title">Claim your money back with ease</div>
+                <div class="services__miniTitle">Claiming mileage has never been so easy, with all calculations done for you.
+                </div>
+                <div class="services__checkText">
+                  <div class="services__checkBlock">
+                    <img src="./images/check/check.png" class="services__checkImg" alt="">
+                    <div class="services__text">100% HMRC compliance</div>
+                  </div>
+                  <div class="services__checkBlock">
+                    <img src="./images/check/check.png" class="services__checkImg" alt="">
+                    <div class="services__text">All logs in one place</div>
+                  </div>
+                </div>
+                <button class="services__button">
+                  <span>lean more</span>
+                  <img src="./images/arrows/buttonArrow.png" alt="">
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="page__team team" id="Team">
+        <div class="container">
+          <div class="team__container">
+            <div class="team__info">
+              <div class="team__title">Julia Harrington</div>
+              <div class="team__miniTitle">Art Director</div>
+              <div class="team__text">Have you ever had a problem with a burned light? Thanks to the effort of Thomas Edison we no longer need to invent a light bulb. We just go to the store or our cupboard and pull one out and screw it in. When we are feeling so low and deep in the pits, this is when we need light to see our way through.</div>
+              <div class="team__socials">
+                <a 
+                  href="https://www.facebook.com/campaign/landing.php?&campaign_id=1600506847&extra_1=s%7Cc%7C515922865595%7Ce%7Cfacebook%7C&placement=&creative=515922865595&keyword=facebook&partner_id=googlesem&extra_2=campaignid%3D1600506847%26adgroupid%3D60825662376%26matchtype%3De%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-541132862%26loc_physical_ms%3D1012859%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=CjwKCAjwkvWKBhB4EiwA-GHjFo00EKp43bmkJ6tPbYKhUu8rp2XXjPXDwU4WlnLHH-AoJxcgLw9PuRoCu_gQAvD_BwE"
+                  class="team__social"
+                  target="_blank"
+                >
+                Facebook
+                </a>
+                <a
+                  href="https://www.instagram.com/"
+                  class="team__social"
+                  target="_blank"
+                >
+                Linkedin
+                </a>
+                <a
+                  href="https://twitter.com/?lang=uk" 
+                  class="team__social" 
+                  target="_blank"
+                >
+                twitter
+                </a>
+              </div>
+              <div class="team__wrapper">
+                <div class="team__slider">
+                  <div class="team__sliderLeft">
+                    <img src="./images/team/small.png" alt="">
+                    <div class="team__next">
+                      <button class="team__button">
+                        <span>NEXT</span>
+                        <img src="./images/arrows/team__arrow.png" alt="">
+                      </button>
+                      <div class="team__name">Minnie Bell</div>
+                    </div>
+                  </div>
+                  
+                  <button class="team__button team__button--prev">
+                    <span>PREV</span>
+                    <img src="./images/arrows/team__arrowRev.png" alt="">
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="team__photo">
+              <img class="team__mainPhoto" src="./images/team/main.png" alt="" width='360';>
+              <img class="team__fon" src="./images/team/fon-2.png" alt="" height="400">
+              <img class="team__fon team__fon--2" src="./images/team/fon-3.png" alt="" height="300">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="page__contact contact" id="Contact">
+        <div class="container">
+          <div class="contact__container">
+            <div class="contact__info">
+              <div class="contact__title">
+                Meet Us
+                <br>
+                in Your City
+              </div>
+              <div class="contact__miniTitle">
+                2005 Stokes Isle Apt. 896,
+                <br>
+                Venaville, New York 10010
+              </div>
+              <div class="contact__cities">
+                <div>
+                  <a
+                    class="contact__citie" 
+                    href="javascript:geocodeAddress('Los Angeles, USA');"
+                    onclick="changeText('LosAngeles')"
+                  >
+                    <div class="contact__citieContainer">
+                      <img class="contact__citiesImg" src="./images/map/map.png" alt="">
+                      <span class="contact__citiesTitle">Los Angeles, USA</span>
+                    </div>
+                    <div class="contact__citiesTextCont">
+                      <span class="contact__citiesText">2005 Stokes Isle Apt. 896,</span>
+                      <br>
+                      <span class="contact__citiesText">Venaville, New York 10010</span>
+                    </div>
+                  </a>
+                  <a
+                    class="contact__citie"
+                    href="javascript:geocodeAddress('NewYork, USA');"
+                    onclick="changeText('NewYork')"
+                  >
+                    <div class="contact__citieContainer">
+                      <img class="contact__citiesImg" src="./images/map/map.png" alt="">
+                      <span class="contact__citiesTitle">NewYork, USA</span>
+                    </div>
+                    <div class="contact__citiesTextCont">
+                      <span class="contact__citiesText">2005 Stokes Isle Apt. 896,</span>
+                      <br>
+                      <span class="contact__citiesText">Venaville, New York 10010</span>
+                    </div>
+                  </a>
+                </div>
+                <div>
+                  <a
+                    class="contact__citie"
+                    href="javascript:geocodeAddress('Boston, USA');"
+                    onclick="changeText('Boston')"
+                  >
+                    <div class="contact__citieContainer">
+                      <img class="contact__citiesImg" src="./images/map/map.png" alt="">
+                      <span class="contact__citiesTitle">Boston, USA</span>
+                    </div>
+                    <div class="contact__citiesTextCont">
+                      <span class="contact__citiesText">2005 Stokes Isle Apt. 896,</span>
+                      <br>
+                      <span class="contact__citiesText">Venaville, New York 10010</span>
+                    </div>
+                  </a>
+                  <a
+                    class="contact__citie"
+                    href="javascript:geocodeAddress('Detroit, USA');"
+                    onclick="changeText('Detroit')"
+                  >
+                    <div class="contact__citieContainer">
+                      <img class="contact__citiesImg" src="./images/map/map.png" alt="">
+                      <span class="contact__citiesTitle">Detroit, USA</span>
+                    </div>
+                    <div class="contact__citiesTextCont">
+                      <span class="contact__citiesText">2005 Stokes Isle Apt. 896,</span>
+                      <br>
+                      <span class="contact__citiesText">Venaville, New York 10010</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="contact__map">
+              <!-- <img class="contact__imgMain" src="./images/map/mapMain.png" alt=""> -->
+              <div id="googleMap" class="contact__imgMain"> </div>
+              <div class="contact__schedule">
+                <div id="changeCity" class="contact__scheduleMainTitle">NewYork</div>
+                <div class="contact__scheduleMiniTitle">
+                  2005 Stokes Isle Apt. 896,
+                  <br> 
+                  <span id="changeMini">New York</span> 10010
+                </div>
+                <div class="contact__scheduleMainCont">
+                  <div class="contact__scheduleBlock">
+                    <div class="contact__scheduleContainer">
+                      <img class="contact__scheduleImg" src="./images/map/clock.png" alt="">
+                      <span class="contact__scheduleTitle">Work Schedule</span>
+                    </div>
+                    <div class="contact__scheduleTextCont">
+                      <span class="contact__scheduleText"><b style="color: black; font-weight: 400;">Mon - Sat: </b>11:00-19:00,</span>
+                      <br>
+                      <span class="contact__scheduleText"><b style="color: black; font-weight: 400;">Sun:</b> 11:00-16:00,</span>
+                    </div>
+                  </div>
+                  <div class="contact__scheduleBlock">
+                    <div class="contact__scheduleContainer">
+                      <img class="contact__scheduleImg" src="./images/map/phone.png" alt="">
+                      <span class="contact__scheduleTitle">Head Office</span>
+                    </div>
+                    <div class="contact__scheduleTextCont">
+                      <span class="contact__scheduleText">(0043) 568 456 902</span>
+                      <br>
+                      <span class="contact__scheduleText">(0043) 568 456 902</span>
+                    </div>
+                  </div>
+                  <div class="contact__scheduleBlock">
+                    <div class="contact__scheduleContainer">
+                      <img class="contact__scheduleImg contact__scheduleImg--pos" src="./images/map/mail.png" alt="">
+                      <span class="contact__scheduleTitle">Head Office</span>
+                    </div>
+                    <div class="contact__scheduleTextCont">
+                      <span class="contact__scheduleText">hello@pad.architecture</span>
+                      <br>
+                      <span class="contact__scheduleText">support@pad.architecture</span>
+                    </div>
+                  </div>
+                </div>
+  
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page__footer footer">
+      <img class="footer__logo" src="./images/logo/LogoFooter.svg">
+      <nav class="footer__nav">
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a href="#" class="footer__link">
+              Home
+            </a>
+          </li>
+          <li class="footer__item">
+            <a href="#Services" class="footer__link">
+              Services
+            </a>
+          </li>
+          <li class="footer__item">
+            <a href="#Team" class="footer__link">
+              Team
+            </a>
+          </li>
+          <li class="footer__item">
+            <a href="#Contact" class="footer__link">
+              Contact
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="footer__text">© UpQode 2019.  All Right Reserved.</div>
+    </footer>
+
+    <script type="text/javascript">
+     function changeText(text) {
+        document.getElementById('changeCity').innerHTML= `${text}`;
+        document.getElementById('changeMini').innerHTML= `${text}`;
+      }
+    </script> 
+    <script type="text/javascript">
+      // global map variable
+      var map;
+
+      function myMap() {
+        var mapProp = {
+          center: new google.maps.LatLng(51.508742, -0.120850),
+          zoom: 5,
+        };
+        // initialize global map variable
+        map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+      }
+
+      function geocodeAddress(address) {
+        var geocoder = new google.maps.Geocoder();
+        geocoder.geocode({
+          address: address
+        }, function(results, status) {
+          if (status == "OK") {
+            if (results[0].geometry.viewport) map.fitBounds(results[0].geometry.viewport);
+            else if (results[0].geometry.bounds) map.fitBounds(results[0].geometry.bounds);
+            else map.setCenter(results[0].geometry.location);
+          } else alert("geocoder failed, status: "+status);
+        })
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDv3gMlMZSEY62xanhFaZkuu3tyDKOIBNo&callback=myMap"></script>
+    <script type="text/javascript" src="scripts/slider.js"></script>
+    <script type="text/javascript" src="scripts/scrollAnimation.js"></script>
   </body>
 </html>

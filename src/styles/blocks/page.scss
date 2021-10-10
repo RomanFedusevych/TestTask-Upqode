@@ -1,0 +1,38 @@
+.page {
+  scroll-behavior: smooth;
+
+  &__header {
+    margin-bottom: 90px;
+  }
+
+  &__menu {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    
+    transform: translateY(-100%);
+    transition: transform 0.3s;
+
+    &:target {
+      transform: translateY(0);
+    }
+  }
+
+  &__services {
+    margin-bottom: 50px;
+
+    @include onDesctop {
+      margin-bottom: 100px;
+    }
+  }
+
+  &__team {
+    margin-bottom: 80px;
+  }
+
+  &__contact {
+    margin-bottom: 80px;
+  }
+}

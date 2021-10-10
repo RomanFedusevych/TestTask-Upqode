@@ -1,0 +1,184 @@
+.team {
+  &__container {
+    @include onDesctop {
+      display: flex;
+    }
+  }
+
+  &__title {
+    text-align: center;
+    margin-bottom: 10px;
+    @include titleText;
+    @include onDesctop {
+      text-align: start;
+    }
+  }
+
+  &__miniTitle {
+    text-align: center;
+    margin-bottom: 40px;
+    @include gilroyFont;
+    @include onDesctop {
+      text-align: start;
+    }
+  }
+
+  &__text {
+    margin-bottom: 40px;
+    @include text;
+    @include onDesctop {
+      max-width: 550px;
+    }
+  }
+
+  &__socials {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+    margin-bottom: 40px;
+
+    @include onDesctop {
+      justify-content: flex-start;
+      padding-left: 10px;
+    }
+  }
+
+  &__social {
+    &::before {
+      content: "";
+      position: absolute;
+
+      transform: translate(-200%, 100%);
+
+      width: 5px;
+      height: 5px;
+
+      background: #D8D8D8;
+      border-radius: 50%;
+    }
+    @include gilroyFont;
+    transition: 0.3s;
+
+    &:hover {
+       color: #00A031;
+    }
+  }
+
+  &__slider {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 360px;
+
+    background: #FBFBFB;
+
+    padding-right: 30px;
+
+    @include onDesctop {
+      width: 50vw;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include onDesctop {
+      position: relative;
+      top: 16px;
+    }
+  }
+
+  &__sliderLeft {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0;
+    margin-bottom: 10px;
+    
+    border: none;
+    background-color: #FBFBFB;
+
+    cursor: pointer;
+
+    @include gilroyFont;
+
+    color: #00A031;
+
+    transition: 0.3s;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    &--prev {
+      position: relative;
+      top: -15px;
+    }
+  }
+
+  &__name {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.2px;
+
+    color: #00A031;
+  }
+
+  &__photo {
+    display: flex;
+    justify-content: center;
+
+    position: relative;
+  }
+
+  &__mainPhoto {
+    @include onDesctop {
+      z-index: 3;
+    }
+
+    transition: 0.3s;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  &__fon {
+    display: none;
+
+    @include onDesctop {
+      z-index: 2;
+
+      position: absolute;
+      align-self: center;
+      display: block;
+  
+      left: 130px;
+
+      opacity: 1;
+    }
+
+    &--2 {
+      @include onDesctop {
+        z-index: 1;
+        left: 230px;
+
+        opacity: 0.5;
+      }
+    }
+  }
+}

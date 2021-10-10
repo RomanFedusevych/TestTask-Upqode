@@ -1,0 +1,126 @@
+.slider {
+  &__container {
+    display: flex;
+    justify-content: center;
+
+    @include onDesctop {
+      justify-content: space-between;
+    }
+  }
+
+  &__arrow {
+    display: none;
+    position: relative;
+    top: 100px;
+    width: 24px;
+    height: 44px;
+
+    border: none;
+    cursor: pointer;
+
+    background: url(../images/arrows/Path-3.svg);
+    opacity: 0.6;
+
+    transition: 0.3s;
+
+    &:hover {
+      transform: scale(1.1);
+      opacity: 1;
+    }
+
+    @include onDesctop {
+      display: block;
+    }
+
+    &--reverse {
+      background: url(../images/arrows/Path-2.svg);
+    }
+  }
+
+  &__info {
+    text-align: center;
+  }
+
+  &__title {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+  
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 100px;
+
+    color: #FFFFFF;
+
+    @include onDesctop {
+      font-size: 90px;
+      margin-bottom: 25px;
+    }
+  }
+
+  &__miniTitle {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 32px;
+    letter-spacing: 0.2px;
+
+    color: #FFFFFF;
+
+    margin-bottom: 54px;
+
+    @include onDesctop {
+      font-size: 18px;
+    }
+  }
+
+  &__button {
+    margin-bottom: 200px;
+    width: 172px;
+    height: 54px;
+  
+    font-family: 'Questrial', sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: 0.1px;
+    cursor: pointer;
+    
+    color: #F4FBF6;
+    background: #00A031;
+
+    border: solid #00A031;
+    border-radius: 27px;
+
+    transition: 0.3s;
+
+    &:hover {
+    transform: scale(1.1);
+    }
+
+    @include onDesctop {
+      font-size: 18px;
+    }
+  }
+
+  &__dots {
+    display: none;
+
+    @include onDesctop {
+      display: block;
+      margin: 0 auto;
+      width: 70px;
+      height: 20px;
+    }
+  }
+}
+
+@for $i from 1 through 2 {
+  .picture-#{$i} {
+    background: linear-gradient(180deg, #050D1D 0.01%, rgba(5, 13, 29, 0) 90.3%), url("../images/backgroundImage/#{$i}.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+  }
+}

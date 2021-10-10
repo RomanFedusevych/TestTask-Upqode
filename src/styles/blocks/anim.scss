@@ -1,0 +1,26 @@
+  .anim {
+    display: none;
+
+    @include onDesctop {
+      display: block;
+    }
+
+    &__svg {
+      z-index: -2;
+      position: absolute;
+      top: 17%;
+      left: 31%;
+      overflow: visible;
+    }
+
+    &__ball {
+      fill: #29A0EC;
+      visibility: hidden;
+    }
+  }
+  
+  .line {
+    fill: none;
+    stroke: white;
+    stroke-width: 2px;
+  }

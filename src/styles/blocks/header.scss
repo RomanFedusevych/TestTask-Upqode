@@ -1,0 +1,49 @@
+.header {
+  height: 100vh;
+
+  @include onDesctop {
+    height: 800px;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 40px;
+
+    @include onDesctop {
+      padding: 0 170px;
+      margin-bottom: 10%;
+    }
+
+    @include headerFont;
+  }
+
+  &__menu {
+    display: block;
+
+    width: 25px;
+    height: 25px;
+
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    background-image: url(../images/menu/menu.svg);
+
+    transition: 0.3s;
+
+    &:hover {
+      background-image: url(../images/menu/menu_hover.svg);
+    }
+
+    @include onDesctop {
+      display: none;
+    }
+  }
+
+  &__img {
+    height: 38px;
+  }
+}
