@@ -17,7 +17,6 @@ const main = gsap.timeline({defaults: {duration: 1},
     end: "bottom center"
   }})
 .to(".anim__ball", {duration: 0.01, autoAlpha: 1})
-.from(".anim__line", {drawSVG: 1215}, 0)
 .to(".anim__ball", {motionPath: {
   path: ".anim__line", 
   align:".anim__line",
