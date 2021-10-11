@@ -172,6 +172,12 @@
     letter-spacing: 0.2px;
 
     color: #999999;
+
+    transition: 0.3s;
+
+    &:hover {
+      color: #0a0a0a;
+    }
   }
 
   &__scheduleContainer {

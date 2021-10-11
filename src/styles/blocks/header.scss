@@ -1,8 +1,8 @@
 .header {
-  height: 100vh;
+  height: 100%;
 
   @include onDesctop {
-    height: 800px;
+    height: 850px;
   }
 
   &__container {
